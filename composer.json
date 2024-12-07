@@ -1,0 +1,31 @@
+{
+    "name": "brandonkahre/miva-password",
+    "description": "Generate and verify Miva Merchant 5 PR8-7 compatible password hashes.",
+    "license": "BSD-2-Clause",
+    "type": "library",
+    "require": {
+        "php": ">=5.6"
+    },
+    "require-dev": {
+        "ergebnis/composer-normalize": "^2.45",
+        "phpunit/phpunit": "^11.5"
+    },
+    "suggest": {
+        "ext-mcrypt": "Allows using more cryptographically secure methods for PHP < 7.2.0"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "MivaPassword\\": "src/MivaPassword"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "ergebnis/composer-normalize": true
+        },
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    }
+}
